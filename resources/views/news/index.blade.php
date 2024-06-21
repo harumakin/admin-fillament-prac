@@ -9,7 +9,7 @@
 
 <body class="antialiased">
   <div class="container">
-    <h1>News</h1>
+    <h1>News Post</h1>
     <ul>
       @foreach ($posts as $post)
       <li>
