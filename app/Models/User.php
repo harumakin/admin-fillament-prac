@@ -7,9 +7,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+// use Filament\Models\Contracts\FilamentUser;
+// use Filament\Panel;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+
+    // public function canAccessPanel(Panel $panel): bool
+    // {
+	// 	# 下記の行のyourdomain.com部分を変える
+    //     return str_ends_with($this->email, '@gmail.com') && $this->hasVerifiedEmail();
+    // }
 
     /**
      * The attributes that are mass assignable.
